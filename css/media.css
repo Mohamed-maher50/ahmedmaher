@@ -1,0 +1,16 @@
+@media (max-width: 995px) {
+  header {
+    background-position: -300px 0px;
+  }
+  header nav {
+    width: 100%;
+  }
+  .aboutUs .content .img .text {
+    position: static;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .aboutUs .content .img img {
+    width: 100%;
+  }
+}

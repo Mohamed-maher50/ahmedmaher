@@ -4,32 +4,113 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap 4 -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
       integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
       crossorigin="anonymous"
     />
-
+    <!--  -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- link css -->
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+    <!-- fav.ico -->
     <link rel="icon" type="image/png" href="/img/fav.ico" />
+    <!-- ofq -->
     <title>OFQ</title>
   </head>
   <body>
+    <!-- start in header -->
     <header>
-      <div class="logo">
-        <img src="./img/ofq.jpg" />
+      <div class="container-sm">
+        <div class="logo">
+          <img src="./img/ofq.jpg" />
+        </div>
+        <nav>
+          <ul class="bold">
+            <li>projects</li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">SERVICES</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav>
-        <ul>
-          <li><a href="#">ABOUT US</a></li>
-          <li><a href="#">SERVICES</a></li>
-          <li><a href="#">CONTACT</a></li>
-        </ul>
-      </nav>
     </header>
+    <!-- ///////////// -->
+    <!-- start in about us -->
+    <div class="aboutUs">
+      <div class="container">
+        <div class="content row">
+          <div class="light col-12 col-sm-4"></div>
+          <div class="img col-12 col-sm-8">
+            <img src="./img/ahmedmaher.jpg" />
+            <div class="text">
+              <h5 class="text-capitalize">
+                <i class="fas main-color fa-pencil-alt"></i>
 
-    <!-- script  -->
+                Ahmed Maher Abdel Aziz
+              </h5>
+              <p>
+                <i class="fas main-color fa-map-marker-alt"></i>6th of October
+                City
+              </p>
+              <p>
+                <i class="fab main-color fa-instagram"></i
+                ><a href="https://www.instagram.com/ahmed___________maher/"
+                  >click here</a
+                >
+              </p>
+              <p>
+                <a href="https://www.facebook.com/Architectahmedmaher">
+                  <i class="fab main-color fa-facebook-f"></i>click here
+                </a>
+              </p>
+              <p><i class="fab main-color fa-whatsapp"></i>01012303079</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ///////////////////// -->
+    <!-- our projects  -->
+    <div class="projects">
+      <div class="title">projects</div>
+      <div class="container">
+        <div class="row d-flex justify-content-around">
+          <div class="col-12 col-sm-6 col-md-4 my-3 project">
+            <img src="./img/projects/project1.jpg" alt="" />
+            <div class="overlay"></div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 my-3 project">
+            <img src="./img/projects/project2.jpg" alt="" />
+            <div class="overlay"></div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 my-3 project">
+            <img src="./img/projects/project3.jpg" alt="" />
+            <div class="overlay"></div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 my-3 project">
+            <img src="./img/projects/project4.jpg" alt="" />
+            <div class="overlay"></div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 my-3 project">
+            <img src="./img/projects/project5.jpg" alt="" />
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 my-3 project">
+            <img src="./img/projects/project6.jpg" alt="" />
+            <div class="overlay"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /////////////////////////// -->
+
+    <!--  script  -->
     <script src="./js/jquery-3.5.1.min.js"></script>
     <script src="./js/main.js"></script>
     <script

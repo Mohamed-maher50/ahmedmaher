@@ -1,14 +1,31 @@
+@import url("http://fonts.cdnfonts.com/css/bahnschrift");
+
 :root {
   --main-color: #ff521c;
 }
+body {
+  background-color: #fff;
+}
+body,
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Bahnschrift", sans-serif;
+}
+/* start in header */
+header .container-sm {
+  position: relative;
+  height: 100%;
+}
 header {
   position: relative;
-  overflow: hidden;
   background-image: url(../img/Mask\ Group\ 2.png);
   background-size: cover;
   height: 100vh;
   width: 100%;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 .logo {
   position: absolute;
@@ -24,11 +41,12 @@ header {
 }
 header nav {
   position: absolute;
-  bottom: 0%;
-  right: 0;
-  width: 60%;
+  bottom: 5%;
+  right: 0px;
+  width: 65%;
   height: 70px;
   background-color: #fff;
+  z-index: 10;
 }
 header nav ul {
   display: flex;
@@ -39,13 +57,15 @@ header nav ul {
   margin: 0;
 }
 header nav ul li {
-  width: 34%;
+  width: 25%;
   height: 100%;
   line-height: 60px;
   position: relative;
   text-align: center;
   cursor: pointer;
   z-index: 2;
+  padding: 0px 20px;
+  text-transform: uppercase;
 }
 header nav ul li::after {
   content: "";
@@ -56,7 +76,6 @@ header nav ul li::after {
   height: 100%;
   background-color: orange;
   transition: 0.4s ease-in;
-
   z-index: -5;
 }
 header nav ul li:hover::after {
@@ -69,4 +88,105 @@ header nav ul li a {
   text-decoration: none !important;
   transition-delay: 0.4s;
   color: #000 !important;
+}
+
+/* //////////// */
+/* start in projects */
+.projects {
+  padding: 50px;
+  height: auto;
+}
+
+.projects .row {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.projects .row .project {
+  height: 300px;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+  margin: 0;
+}
+.projects .row img {
+  width: 100%;
+  height: 100%;
+}
+.projects .row .project .overlay {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+/* ////////////// */
+/* start in about us */
+.aboutUs {
+  width: 100%;
+  background-color: #000;
+  padding: 150px 0;
+}
+.aboutUs .content {
+  display: flex;
+  height: 100%;
+  color: #5d5d5d;
+  width: 100%;
+}
+.aboutUs .content .light {
+  width: 30%;
+  height: 500px;
+  background-image: url(../img/img_lamp.png);
+  background-size: cover;
+  background-position: -60px 0px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.aboutUs .content .img {
+  height: 100%;
+  width: 60%;
+  position: relative;
+}
+.aboutUs .content .img img {
+  height: 100%;
+  width: 80%;
+}
+.aboutUs .content .img .text {
+  position: absolute;
+  top: 70%;
+  right: 0%;
+  width: 60%;
+
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  font-weight: 700;
+}
+.aboutUs .content .img .text a {
+  color: #5d5d5d;
+}
+.aboutUs .content .img .text i {
+  margin-right: 15px;
+  font-size: 24px;
+}
+/* global classes */
+.bold {
+  font-weight: bold;
+}
+.title {
+  width: max-content;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--main-color);
+  border-bottom: 5px solid var(--main-color);
+  margin: 20px auto;
+}
+.main-color {
+  color: var(--main-color);
+}
+.row {
+  margin: 0;
+  padding: 0;
 }
